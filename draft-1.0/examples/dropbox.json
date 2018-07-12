@@ -1,0 +1,28 @@
+// This is a partial example based on information published at https://www.dropbox.com/help/security/official-domains
+// It is for illustrative purposes only and is not complete or authoritative for dropbox.com.
+
+{
+'email_domains':[
+  'dropbox.com',
+  'dropboxmail.com',
+  'dropbox.zendesk.com'
+],
+'dkim_domains':[
+'dropbox.com'
+]
+auth_domains:[
+  'www.dropbox.com',
+  'paper.dropbox.com',
+]
+www_domains:[
+  'dropbox.com',
+  'dropboxapi.com',
+  'dropboxstatic.com'
+],
+'user_content:'[
+  'dl.dropboxusercontent.com/',
+  'dl.dropbox.com/*',
+  'dl-web.dropbox.com/*',
+  'dl-client.dropbox.com/*'
+]
+}
