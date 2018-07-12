@@ -1,2 +1,8 @@
 # phishing.json
-Proposal to close email security gaps in emails to mitigate phishing using a well-known URI on the signing domain
+> Proposal to close email security gaps enabling phishing by use of a well-known URI
+
+## Premise
+
+## Mechanism
+
+## Eaxmples
