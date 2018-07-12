@@ -1,0 +1,52 @@
+// An annoted example from "example.com"
+
+{
+// Domains allowed to sign for emails on behalf of this website. Email filters and clients should quarantine emails not in this list.
+// This is the most important part of the specification. It addresses  a shortful in DKIM that often 3rd party domains such as 
+// the parent organisation or another tld are used to sign emails leaving users scratching their heads.  When used in combinitation 
+ // with a whitelist then it may also be used to mitigate phishing from similiar looking domains such as examp1e.com
+
+'dkim_domains':[
+'example.org'
+],
+
+
+// Domains allowed in the user displayed "from" field of the email
+// Email filters and clients should quarantine emails not in this list
+
+'email_domains':[
+  'example.net',
+  'example.edu',
+  'example.com',
+],
+
+// These uris contain user content and should not be trusted.
+// Browsers should warn about potential phishing and malicious downloads.
+// I'm undecided what email clients should do, they could warn? or we could dissalow direct links.
+// By enforcing a redirect from a safe URI, then we can discourage the practice of asking for user
+// credentials from paths nominal describing user content. 
+
+'user_content:'[
+  'example.com/user_content/'
+],
+
+
+// Uri(s) allowed to ask authentication information in regards to example.com
+// Browsers (extensions) should warn users when asked for credentials on other uris
+// Automatic login (password managers, U2F, WebAuthN) should only be allowed on these uris.
+
+auth_uri:[
+  'login.example.com/*'
+],
+
+
+// Domains with content related to example.com
+// My intention was to inform which domains are safe to fetch remote images from within emails
+// This could also be used to inform safe origins for webbrowsers but would overlap with CSP headers.
+
+www_domains:[
+  'images.example.com'
+  'tracker.example.net'
+]
+
+}
