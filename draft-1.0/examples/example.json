@@ -1,4 +1,5 @@
-// An annoted example from "example.com"
+// An annoted example for "example.com"
+// This is for illustrative purposes only and is not authoritative for example.com.
 
 {
 // Domains allowed to sign for emails on behalf of this website. Email filters and clients should quarantine emails not in this list.
@@ -35,7 +36,7 @@
 // Browsers (extensions) should warn users when asked for credentials on other uris
 // Automatic login (password managers, U2F, WebAuthN) should only be allowed on these uris.
 
-auth_uri:[
+'auth_uri':[
   'login.example.com/*'
 ],
 
@@ -44,7 +45,7 @@ auth_uri:[
 // My intention was to inform which domains are safe to fetch remote images from within emails
 // This could also be used to inform safe origins for webbrowsers but would overlap with CSP headers.
 
-www_domains:[
+'www_domains':[
   'images.example.com'
   'tracker.example.net'
 ]
