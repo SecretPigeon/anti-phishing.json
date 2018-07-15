@@ -27,7 +27,7 @@
 // By enforcing a redirect from a safe URI, then we can discourage the practice of asking for user
 // credentials from paths nominal describing user content. 
 
-'user_content:'[
+'user_content':'[
   'example.com/user_content/'
 ],
 
@@ -48,6 +48,13 @@
 'www_domains':[
   'images.example.com'
   'tracker.example.net'
-]
+],
+ 
+ 
+// Public keys and signing algorithm used to verify sharable links
 
+'signatures':[
+ {'alg': 'RSASSA-PKCS1-v1_5', 'pubkey':'YW50aS1waGlzaGluZy5qc29u'} 
+]
+ 
 }
