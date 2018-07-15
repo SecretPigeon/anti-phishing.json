@@ -10,11 +10,11 @@
 'dkim_domains':[
 'dropbox.com'
 ]
-auth_domains:[
+'auth_domains':[
   'www.dropbox.com',
   'paper.dropbox.com',
 ]
-www_domains:[
+'www_domains':[
   'dropbox.com',
   'dropboxapi.com',
   'dropboxstatic.com'
@@ -24,5 +24,9 @@ www_domains:[
   'dl.dropbox.com/*',
   'dl-web.dropbox.com/*',
   'dl-client.dropbox.com/*'
+],
+'signatures':[
+ {'alg': 'RSASSA-PKCS1-v1_5', 'pubkey':'YW50aS1waGlzaGluZy5qc29u'} 
 ]
+ 
 }
